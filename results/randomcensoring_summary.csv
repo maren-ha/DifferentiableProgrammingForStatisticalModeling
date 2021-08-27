@@ -1,0 +1,21 @@
+Scenario,Model,MSE,FirstQuartile,Median,ThirdQuartile,Maximum
+1,Mean model,0.042,0.002,0.011,0.035,2.821
+1,Modified mean model,0.042,0.002,0.011,0.035,2.821
+1,Zero model,0.043,0.002,0.011,0.035,2.848
+1,Linear regression,0.06,0.003,0.015,0.049,3.949
+1,Increment model,0.043,0.002,0.009,0.03,2.821
+2,Mean model,0.116,0.006,0.031,0.097,6.55
+2,Modified mean model,0.115,0.006,0.03,0.094,6.55
+2,Zero model,0.117,0.006,0.032,0.098,6.578
+2,Linear regression,0.179,0.007,0.046,0.144,10.034
+2,Increment model,0.13,0.004,0.024,0.085,6.55
+3,Mean model,0.334,0.016,0.088,0.274,19.565
+3,Modified mean model,0.333,0.016,0.087,0.273,19.565
+3,Zero model,0.341,0.016,0.089,0.281,19.785
+3,Linear regression,1.009,0.027,0.179,0.549,122.046
+3,Increment model,0.315,0.011,0.062,0.219,19.565
+4,Mean model,0.825,0.039,0.205,0.631,45.217
+4,Modified mean model,0.823,0.039,0.205,0.63,45.217
+4,Zero model,0.846,0.04,0.209,0.654,45.929
+4,Linear regression,24582.387,0.156,1.499,7.024,6.873309206e6
+4,Increment model,0.766,0.017,0.129,0.474,45.217

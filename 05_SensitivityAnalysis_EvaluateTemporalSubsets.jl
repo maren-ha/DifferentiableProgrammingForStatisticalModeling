@@ -62,9 +62,9 @@ for cind in 1:length(combinations)
     beta1, beta2, beta3 = combination[1], combination[2], combination[3]
     @info "starting with new combination: $(beta1), $(beta2), $(beta3)..." 
     # load data
-    betas_dict = load(string(path_to_results, "betas_allsubsets_combination$(cind).jld2"))
+    betas_dict = load(string(path_to_results, "temporalsubsets/betas_allsubsets_combination$(cind).jld2"))
     betas_allresamples = betas_dict["betas_resamples_combination$(cind)"];
-    inds_dict = load(string(path_to_results, "inds_in_dfs_allsubsets_combination$(cind).jld2"))
+    inds_dict = load(string(path_to_results, "temporalsubsets/inds_in_dfs_allsubsets_combination$(cind).jld2"))
     inds_in_dfs_allresamples = inds_dict["inds_resamples_combination$(cind)"];
     # get prediction errors 
     prederrs_dfs_resamples = []
@@ -108,7 +108,7 @@ for cind in 1:length(combinations)
             end
         end
     end
-    CSV.write(string(path_to_results, "agg_prederrs_resamples_combination$(cind).csv"), agg_prederrs_resamples)
+    CSV.write(string(path_to_results, "agg_prederrs_subsets_combination$(cind).csv"), agg_prederrs_resamples)
     agg_prederrs_dict["combination$(cind)"] = agg_prederrs_resamples
 end
 
@@ -123,9 +123,6 @@ for curquantile in [0.25, 0.5, 0.75]
     allcombinations_quantiles_df[!,string("zeromodel_", curquantile)] = fill(0.0, length(combinations))
     allcombinations_quantiles_df[!,string("linregmodel_", curquantile)] = fill(0.0, length(combinations))
 end
-# save to results folder
-CSV.write(string(path_to_results, "prederrs_allcombinations_quantiles.csv"), allcombinations_quantiles_df)
-
 # make a boxplot for each combination 
 for cind in 1:length(combinations)
     agg_prederrs_resamples = agg_prederrs_dict["combination$(cind)"]
@@ -152,6 +149,8 @@ for cind in 1:length(combinations)
         title = "Differences in prediction error for combination $(cind)"
     ) |> save(string(path_to_results, "prederr_diffs_boxplots_combination_$(cind).svg"))
 end
+# save to results folder
+CSV.write(string(path_to_results, "prederrs_allcombinations_quantiles.csv"), allcombinations_quantiles_df)
 
 
 #

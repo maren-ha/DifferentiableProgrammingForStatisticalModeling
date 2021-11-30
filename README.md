@@ -1,9 +1,9 @@
 # About 
 
-This repository contains code to reproduce all anayses in the manuscript 
+This repository contains code to reproduce all analyses in the paper 
 
-> Maren Hackenberg, Marlon Grodd, Clemens Kreutz, Martina Fischer, Janina Esis, Linus Grabenhenrich, Christian Karagiannidis, Harald Binder: Using Differentiable Programming for Flexible Statistical Modeling 
-> ([arXiv preprint](https://arxiv.org/abs/2012.05722)).
+> Maren Hackenberg, Marlon Grodd, Clemens Kreutz, Martina Fischer, Janina Esis, Linus Grabenhenrich, Christian Karagiannidis, Harald Binder: Using Differentiable Programming for Flexible Statistical Modeling. The American Statistician, 2021. 
+> https://doi.org/10.1080/00031305.2021.2002189; [arXiv preprint](https://arxiv.org/abs/2012.05722).
 
 ![](results/Figure1.png)
 

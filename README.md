@@ -25,4 +25,4 @@ In the `src` folder, the source code of the model loss function can be found, as
 
 The `results` subfolder contains all intermediate results, such as estimated coefficients from longer-running models, as well as the tables and figures created within the scripts. When running the scripts, all results are automatically saved to that subfolder. 
 
-Additionally, in the `notebooks` subfolder, we provide a Jupyter notebook tutorial `IndividualModels+ExemplaryVisualization.ipynb` to serve as starting point for illustrating our method. It guides the user through exemplary analyses step by step and reproduces the individual results in Table 1 as well as **Figures 1 and 2** in the manuscript. 
+Additionally, in the `notebooks` subfolder, we provide a Jupyter notebook tutorial `IndividualModels+ExemplaryVisualization.ipynb` to serve as starting point for illustrating our method. It guides the user through exemplary analyses step by step and reproduces the individual results in Table 1 as well as **Figures 1 and 2** in the manuscript. To run the notebooks with a Julia kernel, the [`IJulia` package](https://github.com/JuliaLang/IJulia.jl) needs to be installed. 

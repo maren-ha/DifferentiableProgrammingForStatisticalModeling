@@ -1,7 +1,6 @@
 [deps]
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-DifferentialEquations = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
 FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
 GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
 JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
